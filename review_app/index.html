@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insurance review labelling</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><h1>Review the sentiment labels</h1><p>Read each review, choose its sentiment toward the insurer, then explicitly approve it.</p></header>
+    <section class="toolbar">
+      <label>Reviewer name / initials <input id="reviewer" maxlength="100" autocomplete="off" placeholder="Your initials"></label>
+      <label>Show <select id="filter"><option value="all">All reviews</option><option value="pending">Not yet approved</option><option value="approved">Approved</option></select></label>
+      <button id="reload" type="button">Reload from CSV</button>
+    </section>
+    <p id="progress" aria-live="polite"></p>
+    <progress id="bar" max="50" value="0"></progress>
+    <p class="rubric"><b>Positive:</b> mainly praise. <b>Negative:</b> mainly dissatisfaction. <b>Neutral:</b> factual, no clear stance. <b>Mixed:</b> meaningful balanced praise and criticism; excluded from the three-class benchmark.</p>
+    <article id="card" hidden>
+      <div class="heading"><h2 id="position"></h2><span id="state"></span></div>
+      <p class="meta" id="review-id"></p>
+      <div id="text" class="review"></div>
+      <fieldset><legend>Your sentiment label</legend>
+        <label><input type="radio" name="sentiment" value="positive"> Positive</label>
+        <label><input type="radio" name="sentiment" value="negative"> Negative</label>
+        <label><input type="radio" name="sentiment" value="neutral"> Neutral</label>
+        <label><input type="radio" name="sentiment" value="mixed_demo"> Mixed</label>
+      </fieldset>
+      <details><summary>Show AI draft and annotation note (not verified gold)</summary><p id="draft"></p><p id="note"></p></details>
+      <label class="approval"><input id="approved" type="checkbox"> I personally read this review and confirm my selected label.</label>
+      <nav>
+        <button id="previous" type="button">← Previous</button>
+        <button id="save" class="primary" type="button">Save</button>
+        <button id="save-next" class="primary" type="button">Save &amp; next →</button>
+        <button id="next" type="button">Skip / next →</button>
+      </nav>
+    </article>
+    <p id="empty" hidden>No reviews match this filter.</p>
+    <p id="message" role="status" aria-live="polite"></p>
+    <footer>Saves update <code>data/daa_annotations.csv</code> on this machine. Backups are kept locally. No API calls or automatic bulk approvals. After reviewing, rerun the analysis to refresh metrics.</footer>
+  </main>
+</body>
+</html>

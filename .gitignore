@@ -25,6 +25,8 @@ htmlcov/
 cache/
 data/raw/
 data/private/
+# Local analysis includes best-effort-masked public review text; review before publishing.
+outputs/
 
 # Editor and operating-system files
 .idea/

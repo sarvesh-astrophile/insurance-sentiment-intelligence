@@ -1,0 +1,33 @@
+:root { font-family: system-ui, sans-serif; color: #193047; background: #eef3f7; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 960px; margin: 2rem auto; padding: 0 1rem 3rem; }
+h1 { margin-bottom: .4rem; }
+header p, footer, .meta { color: #516578; }
+.toolbar, nav, .heading { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.toolbar { margin-top: 1.5rem; }
+.toolbar label { display: grid; gap: .35rem; }
+input, select, button { font: inherit; }
+input:not([type]), select { padding: .6rem; border: 1px solid #aab9c5; border-radius: 6px; }
+button { padding: .65rem 1rem; border: 1px solid #9bafc0; border-radius: 6px; background: white; color: #193047; cursor: pointer; }
+button:disabled { opacity: .45; cursor: default; }
+.primary { background: #145b76; color: white; border-color: #145b76; }
+progress { width: 100%; accent-color: #145b76; }
+.rubric { font-size: .93rem; line-height: 1.65; }
+article { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 3px 16px #19304710; }
+.heading { justify-content: space-between; }
+h2 { font-size: 1.15rem; margin: 0; }
+#state { font-size: .85rem; background: #e7f1f4; padding: .35rem .6rem; border-radius: 6px; }
+.meta { font-size: .8rem; overflow-wrap: anywhere; }
+.review { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.8; max-height: 48vh; overflow-y: auto; padding: 1rem; background: #f6f8fa; border: 1px solid #d9e2e9; }
+fieldset { margin: 1.5rem 0 1rem; border: 1px solid #c7d4de; border-radius: 6px; display: flex; flex-wrap: wrap; gap: 1rem; padding: 1rem; }
+fieldset label, .approval { cursor: pointer; }
+details { color: #516578; font-size: .9rem; }
+summary { cursor: pointer; }
+.approval { display: block; margin: 1.5rem 0; line-height: 1.6; }
+input[type=radio], input[type=checkbox] { accent-color: #145b76; width: 1.1rem; height: 1.1rem; vertical-align: middle; }
+.error { color: #a31927; }
+.success { color: #146044; }
+footer { margin-top: 2rem; line-height: 1.6; font-size: .85rem; }
+button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid #dc9824; outline-offset: 3px; }
+@media (max-width: 600px) { main { margin-top: 1rem; } article { padding: 1rem; } nav { gap: .5rem; } }

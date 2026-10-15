@@ -1,0 +1,51 @@
+review_id,draft_sentiment,human_sentiment,human_approved,reviewer,annotation_notes,text_sha256
+84567114-334b-4c70-bc0b-53d514752867,negative,neutral,True,Sarvesh,Mild criticism of unclear excess terms; review neutral alternative.,ae164fec8cc4e25aa3f2fdf94c8c70997369311498ad91ce830c88e7ea7c6869
+ad436966-9709-3706-ba96-2736d964c781,positive,positive,True,Sarvesh,Praises communication and recommends insurer.,b5373b3caae6dfd27c901d8c0950bd549faa81e481944f4b66d011ca8f1ebfc1
+d2ad9250-86de-4137-877d-523a38c1ca79,negative,negative,True,Sarvesh,Nightmare claims process and unhelpful staff.,fdff07f96db907219e85f8b15b306518ccc466b3ba49bf009582d795d20c6d63
+bfcb9803-8c33-35c7-b63a-e8e64d0902e5,negative,negative,True,Sarvesh,Brief purchase praise outweighed by detailed inflexibility complaint.,ef21fc9a3bdd9132e78995a4ec8553841e707b3dbdd1a2c0ab802c84b97894a2
+e497399d-eb5d-3a83-b391-084645c93598,positive,positive,False,Sarvesh,Satisfied with coverage and setup; no claim experience.,85c52158266ad37a36b7d27edfefc56d97cced9e0992bde1cee79ac3b4875b87
+92791905-9fd6-348d-b073-bf408a69db49,negative,negative,True,Sarvesh,Uncorrected name and unfulfilled promise; product untested.,094ee06d8fe33eb60821a750e41f48559cde30114e777442dec71eee11020dcf
+60137a74-046b-3880-93fc-c33716959ba7,negative,negative,True,Sarvesh,Delayed rejected claim and severe business impact.,19f7949120493af256a5264ef940d776e18ca674fa0c2a6a4cb3dc44bb766e2a
+f12259e8-387b-48ac-8029-b68bb6987709,negative,negative,True,Sarvesh,Two rejected claims and warning against insurer.,77e5f4cc98790271a27104a2a7ceedc94f29f10447e40d9b4ddcc529198a4155
+43d70535-2996-3dc8-a479-45c8ea83821f,mixed_demo,neutral,True,Sarvesh,Positive title and possible reuse alongside meaningful email delay criticism.,f1e3fb21216d69f567be125e49c225c2a6752a2f54e1eeaa398a383b3a7c4a2f
+fa36cbc0-facc-360f-9ad2-4c9c590692e0,negative,mixed_demo,True,Sarvesh,Concern and criticism of claim treatment despite own safe trip; ambiguous target.,95f8702fa46e56e7b3f91870208887cdef6760b899c9c157722f0da2704b2b4f
+030b9266-37f2-329a-adf4-089d80201ce7,negative,negative,True,Sarvesh,Praise targets other businesses; insurer receives sustained criticism.,3c0366e318d8ef275ced7a7ba197bb3b8e601054038f137b817a4bd77c3d752e
+0183e0a7-5ea2-3b76-8efe-2d41632ef5e2,positive,positive,True,Sarvesh,Fine experience and straightforward purchase; claims untested.,2a3a123f03be0cb53530db99d051b9d3b6505eee4c8b29ae26efdd5f855e12b0
+dd4f6bf1-46b9-359f-bdcc-d8fb67a03860,negative,negative,True,Sarvesh,Poor claim management and denial.,78dfc3832eacdc5b1da1ee5d8c5772d736492bfa79581787df47e9148456865d
+04040462-9f81-3cc7-9744-e9a9d9594e45,negative,negative,True,Sarvesh,Discrimination and excessive premium dominate generic value praise.,83bcf2843ddc381ff20c31a6333d9b0bb78dc313d4d49edad52849c3a3857c27
+daba33bd-3fa9-3032-b736-e55d5e9a2123,positive,positive,True,Sarvesh,Good value and clear simple setup.,fa005719d934e3da2d093d81c2edce5decd49a0a82c34f26566da2c186e73e3d
+ae24320b-db59-34fe-a188-7035f1ee1f8a,positive,positive,True,Sarvesh,Impressed with coverage and reminder.,e852d3b3a92d0964f365e94a5ede7a0a45820918f8f4e2c3fcb776f6ae67cc27
+e9c96f53-cb81-3a52-af60-7ac670288052,negative,negative,True,Sarvesh,Useless insurance and denied claims.,98b653d035c12da194a66850af1b46b5042ec41f2d3c4b820947b0e22dd43065
+90c7142c-2c26-4342-9870-91a87ff105b9,negative,negative,True,Sarvesh,Unanswered contact attempts and delayed claim; ignore rating.,2cb40a75f74ff03536cb33e1aea44b5959c6112f2a35e88aa5e13f3aa5c3d963
+c7cdae86-ff10-3c23-aefc-fd9f560f0ff6,positive,positive,True,Sarvesh,Minor card delay resolved; overall all fine.,97e64b42cf77240032c75099640c5014e92c6e6cfe52e6e6736114667a7f2710
+4c655bbc-5c18-3a6b-bef4-505a3349f1fe,mixed_demo,mixed_demo,True,Sarvesh,Substantial price/reward praise and meaningful coverage exclusion concern.,882b27bc82ffc9452c60047a53986b78e8bd97754e465713c64ff2e2c238a4ad
+d1fc47e5-5ed8-39ed-9978-91e4ecb09360,negative,negative,True,Sarvesh,Incorrect coverage change and negative claim outcome.,8f381d25e28aa363d80d19645d5f7e51bbdd833aabfca78ce60201e9f3a54fb0
+dc1aee1a-9f8b-3e2d-90ab-e4a7c1be64f0,negative,negative,False,Sarvesh,Coverage date mistake and refusal of discretion.,4ca04e6f49b621251ac335c41defc56b3394b40d402e7abd82e13ae72b44ef39
+884698d5-ccab-36c3-9e7e-bf1e9bdde1a3,negative,negative,True,Sarvesh,Early assistance praise overwhelmed by six-month claim complaint.,269a819e7d14efef55239e82cdd68b3cd514c4199081a908e36f961b8fc5c91f
+b80a99ed-3c56-41c6-bc51-a1b51a78cf7f,neutral,neutral,True,Sarvesh,Main point is inability to assess unused product; review mild criticism alternative.,c9647e0abb15141fa47ffd823b7e85e596bbd2eef8384bd32829fdf82475134b
+098f54ff-bd88-3855-9b11-1fd59214894c,positive,positive,True,Sarvesh,Good value and easy signup; claims untested.,54d761427ce53249efaa7cae2b0d28365dc5f5e84499a266a0d533d567e1045d
+9cc3db8d-9493-3757-80b7-adad33dab2c7,positive,positive,True,Sarvesh,Efficient claim support and reimbursement.,c085c1490be17add8e10180dde59107d98278cee05b73c0995f960f44a4eb4b9
+8abc9552-f64a-3018-a7ba-b01ef2db02f1,positive,positive,True,Sarvesh,Great prices and recommendation.,2294aef8c1775dab26c7c76ca050f97fdb7b8a7edbae01dd342a4e6dec09729b
+727b30ad-6bac-415c-96ad-362465abc5cf,negative,negative,True,Sarvesh,Rejected claim and inaccessible support.,b1521c7d7893059be146e212804e131450f9a9a74d2b3d94a1384c4c29df7ab4
+2bc35861-8e33-3b3a-a9e9-977b4c17d55f,positive,positive,True,Sarvesh,Happy with coverage and price; would reuse.,157bfb3586f6bf2770d397efd1339f2f1090b10417e03fd19846c5d8fc663258
+d37981b4-7d72-4905-b3c2-44f1e110b086,negative,negative,True,Sarvesh,Criticism of coronavirus exclusions.,7d5627b794bf1da1f324d9addc155804635ec619a8f9c8e8c80a779dc73e8f2f
+a00cbac1-7422-3ff0-8174-e8fc653640ce,negative,negative,True,Sarvesh,Prolonged documentation dispute and misleading limits.,0210310878f3d3a6f48e9b8b70a18cb356d47f5efd3402bf32f505dc29b5e900
+fb074abf-833d-3b75-b344-a9f0671001cc,negative,negative,True,Sarvesh,Excessive claims paperwork.,6d369c806c39491ba1750e4995fbe8e8ac4271aa82ad34f03a2c07bfa658afdc
+02c71c4d-7bc5-4312-adf1-cfcbbb2b2b57,negative,negative,True,Sarvesh,Appalling treatment and escalating evidence demands.,78d09acbd295bbd509f64f79d5ecd22c2a22025283ec7c9e4905bba600f3d644
+433f4bfb-e37c-303d-8027-bf23b7d73f61,negative,negative,True,Sarvesh,Sustained exclusion and premium-increase criticism.,c4a66fae661d2d3b2da4fa78efd39d2b554525b42c4c134a71acd141eba73235
+bd839983-00cd-3a3f-b9fb-2fae3b786b72,negative,negative,False,Sarvesh,Disappointed by claim refusal; great trip is not insurer praise.,05c8058ea8c3c7aa7d16f341a8c3919dd2b090cf9ff507ff5f9776d1e8eb0a02
+8bc22a18-87ec-3ddf-90d5-3b6db07245d7,positive,positive,True,Sarvesh,Successful no-fuss claim despite family medical problems.,77406ad4980951f0f95dd136606aa7333d5827c94792bcf37cc5cf1dce5aae55
+711c52a0-44a8-330c-8ada-3ca67d629f32,mixed_demo,mixed_demo,True,Sarvesh,Meaningful value/coverage praise and unfair-premium complaint.,92f3fe84ad4a0a09fbb01416a4422584d3644233b45baec071aa4e7b91cb6962
+21915d9e-de61-3497-a01e-1e662af2e77c,negative,negative,True,Sarvesh,Initial staff praise outweighed by arrogant service and inconvenient changes.,3bb9e994bc6b7ebcceda54a3fb5ce2851b6b0ac796c33c21438de850b1bf489f
+d034d2e3-8629-37dc-84fc-f54ebaebf474,positive,positive,True,Sarvesh,Happy with premiums coverage and setup.,0b3a2351013f87a9cd84e9804a59c7ae21692cd338a3f292728c375ff1361f68
+741044cc-2f28-3556-8cec-0d7612785ef1,negative,neutral,True,Sarvesh,Claim denied on technicality and cautionary title.,f09eb62aa75ebc680b16429a8555e01aa031e4b71e1c83f626cc10bda5235911
+54913408-a772-4520-9769-34f35b695587,negative,negative,True,Sarvesh,Missing confirmation and information; review neutral request alternative.,2e8b8f0e31c0b6a3c27a014000e35a2b802527ed648956acce7abd0439877b55
+94e4279e-de76-3f3a-886d-2bc01e26fe9f,positive,negative,True,Sarvesh,"Repeated use and first choice; title unclear, human review needed.",907b35b111960b608571cf58f1960b59c69abe4abcf025a311ac16646d5aaa41
+db143142-91a5-4263-9dfb-af295b2cd70b,positive,positive,True,Sarvesh,Helpful staff and cheaper premium; claim service not yet known.,cdaf7db60e8a375bbd0e2a6a65512c4cb50c7eaeb656b6d0e262b6fc6c3c239f
+bd915ef4-6f87-38e6-992c-fb773cf33672,negative,negative,True,Sarvesh,Delayed claim and explicit completed policy cancellations.,dc7c1522562ab5844e14b1aa4b1f2feb3e1ee9d819415ac90ccbd82f13f26e00
+1d87c39e-ea05-3ca0-9869-0a101811028b,positive,positive,True,Sarvesh,Good value easy setup and proactive communication.,60fd382c3241831ab42a288eea8db3cc644096ce01ab93ec70c23713004e9dd1
+48b54c24-df99-35fc-9120-a1905bb233b0,positive,positive,True,Sarvesh,Trouble-free claim and excellent value.,308c7fb98a1430367859436eabb2e925e2c707a640aa426e7bceae2a0f3d8f65
+9ef17c2b-2e26-3af4-b5cc-73aadb1905c5,positive,positive,True,Sarvesh,Good value easy setup; caveat about untested support.,e0222e0e8314211be51b0fc082ddac67197d1d000d8f04d8f95e76a58b5469e1
+caa0df82-684d-395c-9c33-6ac6768b9a8c,negative,negative,True,Sarvesh,Rejected claim and buyer warning.,c7b5c8a947d871829efc5bc5188be07186b6920f639f77020659d76716bb7e27
+beafbe1c-9eb5-479f-b3c0-6b555a1578db,positive,positive,True,Sarvesh,Affordable cover provided peace of mind.,b4a0ad1054ec780f1b7789a0804801d7d5f554c38ebb19422af8e3583c882063
+e85e16ec-6ea4-4ebe-8b02-cf51ca12c484,mixed_demo,mixed_demo,True,Sarvesh,Strong purchase/value praise alongside meaningful delayed-claim criticism.,aef3263d4fe523dc1555e2714ee05dcc262848cf88a44ca217b3153b6ff93d5a
