@@ -1,0 +1,2 @@
+input_rows,empty_text,duplicate_text,changed_or_masked_text,licence_verified,pii_review_complete
+100,0,0,100,False,False

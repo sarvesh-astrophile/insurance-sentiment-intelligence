@@ -1,0 +1,19 @@
+class,precision,recall,f1-score,support,model,cohort
+positive,0.64,1.0,0.7804878048780488,16.0,baseline,human_gold_baseline
+negative,0.875,0.6086956521739131,0.717948717948718,23.0,baseline,human_gold_baseline
+neutral,0.5,0.25,0.3333333333333333,4.0,baseline,human_gold_baseline
+accuracy,0.7209302325581395,0.7209302325581395,0.7209302325581395,0.7209302325581395,baseline,human_gold_baseline
+macro avg,0.6716666666666667,0.6195652173913043,0.6105899520533666,43.0,baseline,human_gold_baseline
+weighted avg,0.7526744186046512,0.7209302325581395,0.7054409005628518,43.0,baseline,human_gold_baseline
+positive,0.64,1.0,0.7804878048780488,16.0,baseline,paired_common_human_gold
+negative,0.875,0.6086956521739131,0.717948717948718,23.0,baseline,paired_common_human_gold
+neutral,0.5,0.25,0.3333333333333333,4.0,baseline,paired_common_human_gold
+accuracy,0.7209302325581395,0.7209302325581395,0.7209302325581395,0.7209302325581395,baseline,paired_common_human_gold
+macro avg,0.6716666666666667,0.6195652173913043,0.6105899520533666,43.0,baseline,paired_common_human_gold
+weighted avg,0.7526744186046512,0.7209302325581395,0.7054409005628518,43.0,baseline,paired_common_human_gold
+positive,0.9375,0.9375,0.9375,16.0,jev,paired_common_human_gold
+negative,0.8846153846153846,1.0,0.9387755102040817,23.0,jev,paired_common_human_gold
+neutral,0.0,0.0,0.0,4.0,jev,paired_common_human_gold
+accuracy,0.8837209302325582,0.8837209302325582,0.8837209302325582,0.8837209302325582,jev,paired_common_human_gold
+macro avg,0.6073717948717948,0.6458333333333334,0.6254251700680272,43.0,jev,paired_common_human_gold
+weighted avg,0.8220035778175313,0.8837209302325582,0.8509729473184623,43.0,jev,paired_common_human_gold

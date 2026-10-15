@@ -1,0 +1,5 @@
+cohort,model,n,eligible_gold_n,paired_coverage,status,accuracy,macro_f1,model_version,mean_latency_ms,p95_latency_ms,mean_estimated_cost_usd,cost_assumptions
+human_gold_baseline,baseline,43,43,1.0,evaluated,0.7209302325581395,0.6105899520533666,3.3.2,0.8504269516019713,1.2072853933204892,0.0,local inference; API cost 0; compute excluded
+paired_common_human_gold,baseline,43,43,1.0,evaluated,0.7209302325581395,0.6105899520533666,3.3.2,0.8504269516019713,1.2072853933204892,0.0,local inference; API cost 0; compute excluded
+paired_common_human_gold,jev,43,43,1.0,evaluated,0.8837209302325582,0.6254251700680272,jev-1.14.0,0.06412472007362995,0.2311463947989976,3.289967441860465e-05,"input=0.042, output=0.0 USD/M; unknown if unset; retries disabled"
+run_status,jev,50,43,,inference_attempted,,,jev-1.14.0,,,,Cache hits have zero new API cost; historical latency is separate; unknown prices stay blank.

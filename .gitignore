@@ -26,7 +26,18 @@ cache/
 data/raw/
 data/private/
 # Local analysis includes best-effort-masked public review text; review before publishing.
-outputs/
+outputs/*
+!outputs/benchmark_results.csv
+!outputs/class_metrics.csv
+!outputs/data_audit.csv
+!outputs/run_metadata.json
+!outputs/model_comparison.png
+!outputs/confusion_human_gold_baseline_baseline.png
+!outputs/confusion_paired_common_human_gold_baseline.png
+!outputs/confusion_paired_common_human_gold_jev.png
+!outputs/jev_issues.png
+!outputs/sentiment_distribution.png
+!outputs/text_lengths.png
 
 # Editor and operating-system files
 .idea/

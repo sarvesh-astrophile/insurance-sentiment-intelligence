@@ -1,8 +1,43 @@
 # Insurance Sentiment Intelligence
 
 Exploratory insurance-feedback analysis comparing **VADER** with **TypeSafe Jev**.
-Implemented in [`insurance_sentiment_analysis.py`](insurance_sentiment_analysis.py)
-as notebook-style `# %%` cells. No frontend, training, or automated customer action.
+Explore the [notebook with saved results](insurance_sentiment_analysis.ipynb), or run
+[`insurance_sentiment_analysis.py`](insurance_sentiment_analysis.py) as a script or
+notebook-style `# %%` cells. Includes a local annotation-review UI; no training or
+automated customer action.
+
+## Saved benchmark results
+
+Both models were evaluated on **the same 43 human-approved, AI-assisted reviews**:
+16 positive, 23 negative and 4 neutral. Jev coverage is **43/43 (100%)** for this
+paired cohort; it returned valid results for all 50 frozen annotation IDs.
+
+| Model | Version | Accuracy | Macro-F1 | Errors |
+|---|---|---:|---:|---:|
+| VADER | 3.3.2 | 72.09% | 0.6106 | 12/43 |
+| TypeSafe Jev | jev-1.14.0 | 88.37% | 0.6254 | 5/43 |
+
+Jev improved accuracy by **16.28 percentage points**, but macro-F1 improved only
+slightly: **neutral recall was 0/4** (VADER: 1/4). This small, rating-balanced
+travel-insurance sample does not establish general superiority or production
+readiness. Of 50 frozen reviews, 47 have approved labels (including 4 mixed cases
+excluded from the benchmark); 3 remain unapproved.
+
+![VADER and Jev paired model comparison](outputs/model_comparison.png)
+
+| VADER confusion matrix | Jev confusion matrix |
+|---|---|
+| ![VADER confusion matrix](outputs/confusion_paired_common_human_gold_baseline.png) | ![Jev confusion matrix](outputs/confusion_paired_common_human_gold_jev.png) |
+
+See [benchmark metrics](outputs/benchmark_results.csv),
+[class-level metrics](outputs/class_metrics.csv), and
+[run metadata and input hashes](outputs/run_metadata.json).
+The saved run reused **50 cached Jev responses**: its Jev timings measure cache
+lookup, **not live API latency**. The paired cohort's historical estimated Jev cost
+averages **$0.00003290 per review**, using configured rates of $0.042 per million
+input tokens and $0 per million output tokens. These are recorded assumptions,
+not independently verified current prices or reconciled invoices; cache hits
+incurred no new API cost. The saved input hashes match the committed data files.
 
 ## Run locally
 
@@ -24,7 +59,8 @@ MPLBACKEND=Agg SHOW_PLOTS=false RUN_JEV=false .venv/bin/python insurance_sentime
 No inference network access is needed for VADER after dependencies are installed.
 Paths are resolved relative to the script, not your shell directory. Notebook
 execution with no `__file__` assumes the repository root is the working directory.
-The requested deliverable is currently the cell-based `.py`, not an `.ipynb`.
+The `.py` supports cell-based execution; the committed `.ipynb` includes saved
+tables and plots for browsing on GitHub. Offline reruns intentionally omit Jev.
 
 ## Current status and data
 
@@ -39,7 +75,8 @@ The requested deliverable is currently the cell-based `.py`, not an `.ipynb`.
 - VADER runs on all usable rows with fixed compound thresholds: positive `>=0.05`,
   negative `<=-0.05`, otherwise neutral. Punctuation and negation are preserved.
 - Jev runs only on the 50 frozen annotation IDs, including mixed qualitative cases.
-- **No human-gold performance is claimed yet.** The source sample is unchanged.
+- The saved benchmark uses 43 approved common-class labels; AI-assisted annotation
+  provenance is retained. The source sample is unchanged.
 
 ## Review the 50 AI-assisted annotation drafts
 
@@ -92,7 +129,7 @@ review the changed text/label and update its hash explicitly before rerunning.
 
 ## Enable Jev (optional, paid inference)
 
-Copy `.env.example` to local `.env` and set `TYPESAFE_API_KEY` there—never commit
+Create a local `.env` and set `TYPESAFE_API_KEY` there—never commit
 or paste credentials. The adapter uses official `typesafe-sdk==0.7.5`, validated
 against [official SDK docs](https://github.com/typesafe-docs/typesafeai).
 
@@ -133,8 +170,11 @@ API errors and call-limit skips cannot generate fake predictions or metrics.
 
 ## Outputs and evaluation
 
-`outputs/` is generated locally and ignored by Git because it includes review
-text. Review licence/privacy before selectively publishing anything.
+`outputs/` is generated locally. Only aggregate metrics, the data audit, run
+metadata and selected plots are tracked for GitHub. Row-level exports containing
+review text and the generated conclusion remain ignored, as do raw API caches.
+Rerunning the pipeline overwrites these files; an offline run replaces the paired
+snapshot with baseline-only results, so review changes before committing.
 
 | Output | Contents |
 |---|---|
@@ -172,7 +212,10 @@ baseline results, output validation, privacy blocking and paired cohort sizes.
 
 ## Remaining PRD gates
 
-Independent human approval of the draft labels; reuse/language/privacy checks;
-live Jev verification; and evidence-based conclusions from the paired benchmark.
+Complete the 3 pending annotation reviews and independent second-reviewer checks;
+document reuse/language/privacy verification and validate fresh-request Jev
+latency and billing separately from the cached benchmark. The saved data audit
+still marks licence and PII review as unverified; publication approval is not
+independent provenance evidence.
 The optional transformer is intentionally omitted. See the
 [PRD](insurance_sentiment_one_day_notebook_prd.md) for the full acceptance criteria.
